@@ -15,8 +15,7 @@ Gemfile:
 gem 'rapscallion'
 ```
 
-
-Simple Form example:
+View example with Simple Form:
 
 ``` haml
 .input
