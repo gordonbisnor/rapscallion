@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["gordonbisnor@gmail.com"]
   s.homepage    = "http://www.github.com/gordonbisnor/rapscallion"
   s.summary     = "Rails client side validations"
-  s.description = "Rails client side validations"
+  s.description = "A gem for Ruby Rails client side validations."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
