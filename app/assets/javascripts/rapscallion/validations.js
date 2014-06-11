@@ -5,25 +5,6 @@
     Author: Gordon B. Isnor
     http://www.github.com/gordonbisnor/rapscallion
     http://blog.isnorcreative.com/2014/06/10/rapscallion.html
-    
-    Activate:
-
-    $(selector).rapscallion({});
-
-      options:
-      
-        /* Change class of error message div */
-        error_message_container_class: "error_messages"
-        
-        /* Set a class on field with error */
-        field_with_error_class: 'has_error'
-        
-        /* Set a class on field with success */
-        field_valid_class: 'is_valid'
-        
-        /* Container for input – used to add and remove error messages */
-        field_container: 'div.input'
-
 
 */
 
@@ -43,13 +24,16 @@
       field_valid_class: 'is_valid',
       
       /* error messages will be remove from input container, eg closest(:selector), set that here */
-      field_container: 'div.input'
+      field_container: 'div.input',
+
+      /* event that triggers validation */
+      trigger: 'blur'
 
     }, options);
 
     return this.each(function() {
       
-      $(this).blur(function(){
+      $(this).on(settings.trigger, function(){
 
         /* the input in question */  
         var el = $(this);

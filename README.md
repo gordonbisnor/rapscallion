@@ -3,6 +3,8 @@ Rapscallion
 
 Ruby on Rails client side validations
 
+Rapscallion does inline client side validation
+
 ### Add Rapscallion to application.js:
 
 ``` javascript
@@ -25,6 +27,9 @@ Ruby on Rails client side validations
 
 - Container for input – used to add and remove error messages
   field_container: 'div.input'
+
+- Event that triggers validation
+  trigger: 'blur'
 
 eg $('.rapscallion').rapscallion({error_message_container_class: 'errors', field_container: '.field'})
 
