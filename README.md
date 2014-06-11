@@ -3,8 +3,6 @@ Rapscallion
 
 Ruby on Rails client side validations
 
-Rapscallion does inline client side validation
-
 ### Add Rapscallion to application.js:
 
 ``` javascript
