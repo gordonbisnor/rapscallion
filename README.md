@@ -1,7 +1,7 @@
 Rapscallion
 ===========
 
-## Ruby on Rails client side validations
+Ruby on Rails client side validations
 
 ### Add Rapscallion to application.js:
 
@@ -14,20 +14,19 @@ Rapscallion
 
 #### Options:
 
-- /* Change class of error message div */
+- Change class of error message div
   error_message_container_class: "error_messages"
 
-- /* Set a class on field with error */
+- Set a class on field with error
   field_with_error_class: 'has_error'
 
-- /* Set a class on field with success */
+- Set a class on field with success
   field_valid_class: 'is_valid'
 
-- /* Container for input – used to add and remove error messages */
+- Container for input – used to add and remove error messages
   field_container: 'div.input'
 
 eg $('.rapscallion').rapscallion({error_message_container_class: 'errors', field_container: '.field'})
-
 
 ### Add Rapscallion to Gemfile:
 
