@@ -22,6 +22,12 @@ View example with Simple Form:
   = f.input :username, input_html: {class: 'rapscallion'}
 ```
 
+When validating an existing record (for example to avoid uniqueness validation problems):
+
+``` haml
+= simple_form_for @thing, html: {data: {existing_record: @thing.id}} do |f|
+```
+
 Model:
 
 ``` ruby

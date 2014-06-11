@@ -45,6 +45,11 @@ $(document).on('blur', '.rapscallion', function(){
 
   validation_data[confirmation_field] = confirmation_value;
 
+  /* existing record? */
+  if(form.data('existing-record') != undefined) {
+    validation_data['existing_record'] = form.data('existing-record');
+  };
+
   /* do ajax request */
   $.ajax({
     type: "POST",

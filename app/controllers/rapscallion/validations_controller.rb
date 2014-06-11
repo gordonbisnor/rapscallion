@@ -4,7 +4,13 @@ module Rapscallion
 		
 		def create
 			klass = params[:klass].camelize.constantize
-			item = klass.new
+
+			if params[:existing_record].present?
+				item = klass.find(params[:existing_record])
+			else
+				item = klass.new
+			end
+
 			field = params[:attr]
 			value = params[:field_val]
 			item.send("#{field}=", value)
