@@ -1,4 +1,4 @@
-rapscallion
+Rapscallion
 ===========
 
 ## Ruby on Rails client side validations
