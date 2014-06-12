@@ -1,7 +1,12 @@
 module Rapscallion
 
 	class ValidationsController < ::ApplicationController
-		
+
+		eval %[skip_filter #{_process_action_callbacks.select { |c|
+    [:before, :after, :around].include? c.kind }.collect{|c|
+      c.filter.inspect}.join(", ")
+    }]
+
 		def create
 			klass = params[:klass].camelize.constantize
 
