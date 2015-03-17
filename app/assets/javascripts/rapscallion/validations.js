@@ -27,7 +27,7 @@
       field_container: 'div.input',
 
       /* event that triggers validation */
-      trigger: 'blur'
+      trigger: 'blur onSelect'
 
     }, options);
 
